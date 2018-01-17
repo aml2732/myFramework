@@ -1,0 +1,74 @@
+@import 'colorScheme.scss';
+@import 'base.scss';
+
+$spaceing: 10px;
+
+@mixin blockColor($name, $color){
+  &.block-#{$name}{
+    background-color: lighten($color, 25%);
+    border: solid 3px $color;
+    @if (lightness($color) > 50){
+      color: #000000;
+    } @else {
+      color: #ffffff;
+    }
+  }
+}
+
+.myFramework{
+
+  .block{
+    border-radius: $spaceing;
+    padding: $spaceing;
+    border-width: 1px;
+    border-style: solid;
+    &>*{margin-top: $spaceing;}
+    @include blockColor('blue-light-2', $blue-light-2);
+    @include blockColor('blue-light-1', $blue-light-1);
+    @include blockColor('blue-neutral', $blue-neutral);
+    @include blockColor('blue-dark-1', $blue-dark-1);
+    @include blockColor('blue-dark-2', $blue-dark-2);
+  }
+
+  .row, .rows{
+    display:flex;
+    flex-direction:row;
+    &.center{
+      justify-content: center;
+      &>.column{align-items: center;}
+    }
+    &.space-evenly{justify-content: space-evenly;}
+    &.space-between{justify-content: space-between;}
+    &.align-end{
+      justify-content: flex-end;
+      &>.column{
+        align-items: flex-end;
+      }
+    }
+    &>.column{
+      padding: $spaceing;
+    }
+    &.no-gap>.column{
+      flex: 1 1 auto;
+    }
+
+  }
+
+  .column, .columns{
+    display:flex;
+    flex-direction:column;
+    &:not(.no-gap){
+      margin-left: $spaceing;
+      margin-right:$spaceing;
+    }
+    &.center{justify-content: center;}
+    &.space-evenly{justify-content: space-evenly;}
+    &.space-between{justify-content: space-between;}
+    &.align-end{justify-content: flex-end;}
+    &.equalize{flex:1 1 auto;}
+    &>.row{
+      padding: $spaceing;
+    }
+  }
+
+}

@@ -1,0 +1,19 @@
+.bg-db{
+  background-color: #123652;
+  color: white;
+}
+.bg-lb{
+  background-color: #718EA4;
+  color: black;
+}
+
+.equalize{
+  background-color: green;
+}
+
+textarea{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 220px;
+  height: 50px;
+}

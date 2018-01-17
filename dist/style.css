@@ -1,0 +1,69 @@
+.myFramework div, .myFramework span, .myFramework p {
+  font-family: Helvetica; }
+
+.myFramework .block {
+  border-radius: 10px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid; }
+  .myFramework .block > * {
+    margin-top: 10px; }
+  .myFramework .block.block-blue-light-2 {
+    background-color: #bfccd6;
+    border: solid 3px #718EA4;
+    color: #000000; }
+  .myFramework .block.block-blue-light-1 {
+    background-color: #8eacc3;
+    border: solid 3px #496D89;
+    color: #ffffff; }
+  .myFramework .block.block-blue-neutral {
+    background-color: #5693bf;
+    border: solid 3px #29506D;
+    color: #ffffff; }
+  .myFramework .block.block-blue-dark-1 {
+    background-color: #297bbb;
+    border: solid 3px #123652;
+    color: #ffffff; }
+  .myFramework .block.block-blue-dark-2 {
+    background-color: #0d65ae;
+    border: solid 3px #042037;
+    color: #ffffff; }
+
+.myFramework .row, .myFramework .rows {
+  display: flex;
+  flex-direction: row; }
+  .myFramework .row.center, .myFramework .rows.center {
+    justify-content: center; }
+    .myFramework .row.center > .column, .myFramework .rows.center > .column {
+      align-items: center; }
+  .myFramework .row.space-evenly, .myFramework .rows.space-evenly {
+    justify-content: space-evenly; }
+  .myFramework .row.space-between, .myFramework .rows.space-between {
+    justify-content: space-between; }
+  .myFramework .row.align-end, .myFramework .rows.align-end {
+    justify-content: flex-end; }
+    .myFramework .row.align-end > .column, .myFramework .rows.align-end > .column {
+      align-items: flex-end; }
+  .myFramework .row > .column, .myFramework .rows > .column {
+    padding: 10px; }
+  .myFramework .row.no-gap > .column, .myFramework .rows.no-gap > .column {
+    flex: 1 1 auto; }
+
+.myFramework .column, .myFramework .columns {
+  display: flex;
+  flex-direction: column; }
+  .myFramework .column:not(.no-gap), .myFramework .columns:not(.no-gap) {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .myFramework .column.center, .myFramework .columns.center {
+    justify-content: center; }
+  .myFramework .column.space-evenly, .myFramework .columns.space-evenly {
+    justify-content: space-evenly; }
+  .myFramework .column.space-between, .myFramework .columns.space-between {
+    justify-content: space-between; }
+  .myFramework .column.align-end, .myFramework .columns.align-end {
+    justify-content: flex-end; }
+  .myFramework .column.equalize, .myFramework .columns.equalize {
+    flex: 1 1 auto; }
+  .myFramework .column > .row, .myFramework .columns > .row {
+    padding: 10px; }

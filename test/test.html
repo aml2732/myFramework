@@ -1,0 +1,176 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../dist/style.css"></link>
+  <link rel="stylesheet" type="text/css" href="../src/testCss.css"></link>
+
+</head>
+<body>
+
+  <div class="myFramework">
+
+    <div class="block block-blue-light-2">
+      <h2>myFramework </h2>
+      is a pure CSS framework built in SASS.
+      Its utilizes flex under the covers for the purpose of quickly prototyping websites.
+      The goal of myFramework is to be able to build layouts that:
+      <ul>
+        <li>grow to fill the available area</li>
+        <li>scale text to maintain - not yet implemented</li>
+        <li>style common web components like buttons</li>
+      </ul>
+    </div>
+
+    <h1 class="section-head">Rows And Columns</h1>
+    <div class="row center">
+      <div class="column equalize">
+        <h2>Example: row default</h2>
+        <div class="row bg-db" style="height:60px; width: 200px;">
+          <div class="column bg-lb">0</div>
+          <div class="column bg-lb">1</div>
+        </div>
+        <textarea>
+<div class="row" style="height:60px; width: 200px;"><div class="column bg-lb">0</div><div class="column bg-lb">1</div></div>
+        </textarea>
+
+        <h2>Example: row center</h2>
+        <div class="row center bg-db" style="height:60px; width: 200px;">
+          <div class="column bg-lb">A</div>
+          <div class="column bg-lb">B</div>
+        </div>
+        <textarea>
+<div class="row center bg-db" style="height:60px; width: 200px;"><div class="column bg-lb">A</div><div class="column bg-lb">B</div></div>
+        </textarea>
+
+        <h2>Example: row space-evenly</h2>
+        <div class="row space-evenly bg-db" style="height:60px; width: 200px;">
+          <div class="column bg-lb">C</div>
+          <div class="column bg-lb">D</div>
+        </div>
+        <textarea>
+  <div class="row space-evenly bg-db" style="height:60px; width: 200px;"><div class="column bg-lb">C</div><div class="column bg-lb">D</div></div>
+        </textarea>
+      </div>
+      <div class="column equalize">
+
+        <h2>Example: row space-between</h2>
+        <div class="row space-between bg-db" style="height:60px; width: 200px;">
+          <div class="column bg-lb">E</div>
+          <div class="column bg-lb">F</div>
+        </div>
+        <textarea>
+<div class="row space-between bg-db" style="height:60px; width: 200px;"><div class="column bg-lb">E</div><div class="column bg-lb">F</div></div>
+        </textarea>
+
+        <h2>Example: row align-end</h2>
+        <div class="row align-end bg-db" style="height:60px; width: 200px;">
+          <div class="column bg-lb">G</div>
+          <div class="column bg-lb">H</div>
+        </div>
+        <textarea>
+<div class="row align-end bg-db" style="height:60px; width: 200px;"><div class="column bg-lb">G</div><div class="column bg-lb">H</div></div>
+        </textarea>
+
+      </div>
+
+    </div>
+    <hr />
+
+    <div class="row center">
+      <div class="column equalize">
+        <h2>Example: column</h2>
+        <div class="column bg-lb" style="height:60px; width: 200px;">
+          <div class="row bg-db">I</div>
+          <div class="row bg-db">J</div>
+        </div>
+        <textarea>
+<div class="column bg-lb" style="height:60px; width: 200px;"><div class="row bg-db">I</div><div class="row bg-db">J</div></div>
+        </textarea>
+
+        <h2>Example: column center</h2>
+        <div class="column bg-lb center" style="height:60px; width: 200px;">
+          <div class="row bg-db">K</div>
+          <div class="row bg-db">L</div>
+        </div>
+        <textarea>
+<div class="column bg-lb center" style="height:60px; width: 200px;"><div class="row bg-db">K</div><div class="row bg-db">L</div></div>
+        </textarea>
+
+        <h2>Example: column space-evenly</h2>
+        <div class="column bg-lb space-evenly" style="height:60px; width: 200px;">
+          <div class="row bg-db">M</div>
+          <div class="row bg-db">N</div>
+        </div>
+        <textarea>
+<div class="column bg-lb space-evenly" style="height:60px; width: 200px;"><div class="row bg-db">M</div><div class="row bg-db">N</div></div>
+        </textarea>
+      </div>
+      <div class="column equalize">
+
+        <h2>Example: column space-between</h2>
+        <div class="column bg-lb space-between" style="height:60px; width: 200px;">
+          <div class="row bg-db">O</div>
+          <div class="row bg-db">P</div>
+        </div>
+        <textarea>
+<div class="column bg-lb space-between" style="height:60px; width: 200px;"><div class="row bg-db">O</div><div class="row bg-db">P</div></div>
+        </textarea>
+
+        <h2>Example: column align-end</h2>
+        <div class="column bg-lb align-end" style="height:60px; width: 200px;">
+          <div class="row bg-db">Q</div>
+          <div class="row bg-db">R</div>
+        </div>
+        <textarea>
+<div class="column bg-lb align-end" style="height:60px; width: 200px;"><div class="row bg-db">Q</div><div class="row bg-db">R</div></div>
+        </textarea>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <h1 class="section-head">Blocks</h1>
+
+
+
+
+
+    <div class="row center">
+      <div class="column">
+        <div class="block block-blue-light-2">
+          Text Text Text Text Text Text Text
+          Text Text Text Text Text Text Text
+          Text Text Text Text Text Text Text
+        </div>
+        <textarea>
+<div class="block block-blue-light-2">Text</div>
+        </textarea>
+      </div>
+      <div class="column">
+        <div class="block block-blue-light-1">
+          Text Text Text Text Text Text Text
+          Text Text Text Text Text Text Text
+          Text Text Text Text Text Text Text
+        </div>
+        <textarea>
+<div class="block block-blue-light-1">Text</div>
+        </textarea>
+      </div>
+      <div class="column">
+        <div class="block block-blue-neutral">
+          Text Text Text Text Text Text Text
+          Text Text Text Text Text Text Text
+          Text Text Text Text Text Text Text
+        </div>
+        <textarea>
+<div class="block block-blue-neutral">Text</div>
+        </textarea>
+
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>
