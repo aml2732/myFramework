@@ -1,12 +1,59 @@
 .myFramework div, .myFramework span, .myFramework p {
   font-family: Helvetica; }
 
+.myFramework .button {
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  width: min-content;
+  padding: 5px; }
+  .myFramework .button.button-blue-light-2 {
+    background-color: #bfccd6;
+    border-color: #718EA4;
+    color: #000000; }
+    .myFramework .button.button-blue-light-2:hover {
+      background-color: #718EA4;
+      cursor: pointer; }
+  .myFramework .button.button-blue-light-1 {
+    background-color: #8eacc3;
+    border-color: #496D89;
+    color: #ffffff; }
+    .myFramework .button.button-blue-light-1:hover {
+      background-color: #496D89;
+      cursor: pointer; }
+  .myFramework .button.button-blue-neutral {
+    background-color: #5693bf;
+    border-color: #29506D;
+    color: #ffffff; }
+    .myFramework .button.button-blue-neutral:hover {
+      background-color: #29506D;
+      cursor: pointer; }
+  .myFramework .button.button-blue-dark-1 {
+    background-color: #297bbb;
+    border-color: #123652;
+    color: #ffffff; }
+    .myFramework .button.button-blue-dark-1:hover {
+      background-color: #123652;
+      cursor: pointer; }
+  .myFramework .button.button-blue-dark-2 {
+    background-color: #0d65ae;
+    border-color: #042037;
+    color: #ffffff; }
+    .myFramework .button.button-blue-dark-2:hover {
+      background-color: #042037;
+      cursor: pointer; }
+  .myFramework .button.stretch {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
 .myFramework .block {
   border-radius: 10px;
   padding: 10px;
   border-width: 1px;
   border-style: solid; }
-  .myFramework .block > * {
+  .myFramework .block > *:first-child {
     margin-top: 10px; }
   .myFramework .block.block-blue-light-2 {
     background-color: #bfccd6;

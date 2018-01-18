@@ -1,5 +1,6 @@
 @import 'colorScheme.scss';
 @import 'base.scss';
+@import 'button.scss';
 
 $spaceing: 10px;
 
@@ -22,7 +23,7 @@ $spaceing: 10px;
     padding: $spaceing;
     border-width: 1px;
     border-style: solid;
-    &>*{margin-top: $spaceing;}
+    &>*:first-child{margin-top: $spaceing;}
     @include blockColor('blue-light-2', $blue-light-2);
     @include blockColor('blue-light-1', $blue-light-1);
     @include blockColor('blue-neutral', $blue-neutral);
