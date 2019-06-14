@@ -1,0 +1,55 @@
+@mixin borderColor($name, $color){
+  .border-#{$name}{
+    border-color: $color;
+  }
+}
+
+@mixin borderWidth($name, $w){
+  .border-#{$name}{
+    border-width: $w;
+  }
+}
+
+@mixin backgroundColor($name, $color){
+  .bg-#{$name}{
+    background-color: $color;
+  }
+}
+
+@mixin textColor($name, $color){
+  .text-#{$name}{
+    color: $color;
+  }
+}
+
+.myFramework{
+  @include borderColor('blue-light-2', $blue-light-2);
+  @include borderColor('blue-light-1', $blue-light-1);
+  @include borderColor('blue-neutral', $blue-neutral);
+  @include borderColor('blue-dark-1', $blue-dark-1);
+  @include borderColor('blue-dark-2', $blue-dark-2);
+
+  @include borderWidth('1', 1px);
+  @include borderWidth('2', 2px);
+  @include borderWidth('3', 3px);
+  @include borderWidth('4', 4px);
+  @include borderWidth('5', 5px);
+
+  @include borderWidth('1-rem', 1rem);
+
+  @include backgroundColor('blue-light-2', $blue-light-2);
+  @include backgroundColor('blue-light-1', $blue-light-1);
+  @include backgroundColor('blue-neutral', $blue-neutral);
+  @include backgroundColor('blue-dark-1', $blue-dark-1);
+  @include backgroundColor('blue-dark-2', $blue-dark-2);
+
+  @include textColor('blue-light-2', $blue-light-2);
+  @include textColor('blue-light-1', $blue-light-1);
+  @include textColor('blue-neutral', $blue-neutral);
+  @include textColor('blue-dark-1', $blue-dark-1);
+  @include textColor('blue-dark-2', $blue-dark-2);
+
+
+  .border{border-style:solid;}
+  .border-dashed{border-style: dashed;}
+}

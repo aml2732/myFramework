@@ -1,6 +1,9 @@
 .myFramework div, .myFramework span, .myFramework p {
   font-family: Helvetica; }
 
+.myFramework .full-width {
+  width: 100%; }
+
 .myFramework .button {
   border-radius: 5px;
   border-width: 1px;
@@ -47,6 +50,75 @@
     display: flex;
     flex-direction: row;
     justify-content: center; }
+
+.myFramework .border-blue-light-2 {
+  border-color: #718EA4; }
+
+.myFramework .border-blue-light-1 {
+  border-color: #496D89; }
+
+.myFramework .border-blue-neutral {
+  border-color: #29506D; }
+
+.myFramework .border-blue-dark-1 {
+  border-color: #123652; }
+
+.myFramework .border-blue-dark-2 {
+  border-color: #042037; }
+
+.myFramework .border-1 {
+  border-width: 1px; }
+
+.myFramework .border-2 {
+  border-width: 2px; }
+
+.myFramework .border-3 {
+  border-width: 3px; }
+
+.myFramework .border-4 {
+  border-width: 4px; }
+
+.myFramework .border-5 {
+  border-width: 5px; }
+
+.myFramework .border-1-rem {
+  border-width: 1rem; }
+
+.myFramework .bg-blue-light-2 {
+  background-color: #718EA4; }
+
+.myFramework .bg-blue-light-1 {
+  background-color: #496D89; }
+
+.myFramework .bg-blue-neutral {
+  background-color: #29506D; }
+
+.myFramework .bg-blue-dark-1 {
+  background-color: #123652; }
+
+.myFramework .bg-blue-dark-2 {
+  background-color: #042037; }
+
+.myFramework .text-blue-light-2 {
+  color: #718EA4; }
+
+.myFramework .text-blue-light-1 {
+  color: #496D89; }
+
+.myFramework .text-blue-neutral {
+  color: #29506D; }
+
+.myFramework .text-blue-dark-1 {
+  color: #123652; }
+
+.myFramework .text-blue-dark-2 {
+  color: #042037; }
+
+.myFramework .border {
+  border-style: solid; }
+
+.myFramework .border-dashed {
+  border-style: dashed; }
 
 .myFramework .block {
   border-radius: 10px;
