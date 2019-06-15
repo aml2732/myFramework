@@ -37,6 +37,7 @@
 
   @include borderWidth('1-rem', 1rem);
 
+  @include backgroundColor('blue-light-3', lighten($blue-light-2, 25%));
   @include backgroundColor('blue-light-2', $blue-light-2);
   @include backgroundColor('blue-light-1', $blue-light-1);
   @include backgroundColor('blue-neutral', $blue-neutral);

@@ -23,7 +23,7 @@
 
     <h1 class="section-head">Rows And Columns</h1>
     <div class="row center">
-      <div class="column equalize">
+      <div class="column equalize bg-blue-light-3">
         <h2>Example: row default</h2>
         <div class="row bg-db" style="height:60px; width: 200px;">
           <div class="column bg-lb">0</div>
@@ -60,7 +60,7 @@
   </div>
         </textarea></pre>
       </div>
-      <div class="column equalize">
+      <div class="column equalize bg-blue-light-3">
 
         <h2>Example: row space-between</h2>
         <div class="row space-between bg-db" style="height:60px; width: 200px;">
@@ -92,7 +92,7 @@
     <hr />
 
     <div class="row center">
-      <div class="column equalize">
+      <div class="column equalize bg-blue-light-3">
         <h2>Example: column</h2>
         <div class="column bg-lb" style="height:100px; width: 200px;">
           <div class="row bg-db">I</div>
@@ -129,7 +129,7 @@
 </div>
     </textarea></pre>
       </div>
-      <div class="column equalize">
+      <div class="column equalize bg-blue-light-3">
 
         <h2>Example: column space-between</h2>
         <div class="column bg-lb space-between" style="height:100px; width: 200px;">
@@ -204,11 +204,11 @@
 
     <div class="button">Helloworld</div>
     <p>
-      The .button class adds a border, and smooth corners.
+      The <span class="code">.button</span> class adds a border, and smooth corners.
     </p>
     <div class="button stretch">Helloworld</div>
     <p>
-      Adding the .button and .stretch class to a div makes a button that takes up 100% of the width AND centers the contents.
+      Adding the <span class="code">.button</span> and <span class="code">.stretch</span> class to a div makes a button that takes up 100% of the width AND centers the contents.
     </p>
     <div class="row space-evenly">
       <div class="button button-blue-light-2">Helloworld</div>
@@ -218,8 +218,8 @@
       <div class="button button-blue-dark-2">Helloworld</div>
     </div>
     <p>
-      Adding .button and .button-color-shade-number results in different colored buttons.
-      built in color classes are .button-blue-light-2, .button-blue-light-1, .button-blue-neutral, .button-blue-dark-1, .button-blue-dark-2
+      Adding <span class="code">.button</span> and <span class="code">.button-color-shade-number</span> results in different colored buttons.
+      Built in color classes are <span class="code">.button-blue-light-2</span>, <span class="code">.button-blue-light-1</span>, <span class="code">.button-blue-neutral</span>, <span class="code">.button-blue-dark-1</span>, <span class="code">.button-blue-dark-2</span>
     </p>
 
     <textarea class="full-width">
@@ -244,10 +244,10 @@
       <div style="height:20px; width:20px;" class="border border-1 border-blue-dark-2"></div>
     </div>
 
-    <p> Use either .border or .border-dotted to specify the border type.
-      Use .border-1 through border-5 to specify borders between 1 and 5 pixels.
-      Use .border-1-rem to specify a toy case where border width is 1rem;
-      Use the syntax .border-blue-light-2, .border-blue-light-1, .border-blue-neutral, .border-blue-dark-1, or .border-blue-dark-2 to specify the color.
+    <p> Use either <span class="code">.border</span> or <span class="code">.border-dotted</span> to specify the border type.
+      Use <span class="code">.border-1</span> through <span class="code">.border-5</span> to specify borders between 1 and 5 pixels.
+      Use <span class="code">.border-1-rem</span> to specify a toy case where border width is 1rem;
+      Use the syntax <span class="code">.border-blue-light-2</span>, <span class="code">.border-blue-light-1</span>, <span class="code">.border-blue-neutral</span>, <span class="code">.border-blue-dark-1</span>, or <span class="code">.border-blue-dark-2</span> to specify the color.
     </p>
 
     <textarea class="full-width">
@@ -259,6 +259,7 @@
     </textarea>
 
     <div class="row space-evenly">
+      <div style="height:20px; width:20px;" class="bg-blue-light-3"></div>
       <div style="height:20px; width:20px;" class="bg-blue-light-2"></div>
       <div style="height:20px; width:20px;" class="bg-blue-light-1"></div>
       <div style="height:20px; width:20px;" class="bg-blue-neutral"></div>
@@ -267,10 +268,11 @@
     </div>
 
     <p>
-      Use .bg-blue-light-2, .bg-blue-light-1, .bg-blue-neutral, .bg-blue-dark-1, .bg-blue-dark-2. Make sure your element has a width and height defined or some content.
+      Use <span class="code">.bg-blue-light-3</span>, <span class="code">.bg-blue-light-2</span>, <span class="code">.bg-blue-light-1</span>, <span class="code">.bg-blue-neutral</span>, <span class="code">.bg-blue-dark-1</span>, <span class="code">.bg-blue-dark-2</span>. Make sure your element has a width and height defined or some content.
     </p>
 
     <textarea class="full-width">
+      <div style="height:20px; width:20px;" class="bg-blue-light-3"></div>
       <div style="height:20px; width:20px;" class="bg-blue-light-2"></div>
       <div style="height:20px; width:20px;" class="bg-blue-light-1"></div>
       <div style="height:20px; width:20px;" class="bg-blue-neutral"></div>
@@ -287,7 +289,7 @@
     </div>
 
     <p>
-      Use either .text-blue-light-2, .text-blue-light-1, .text-blue-neutral, .text-blue-dark-1, or .text-blue-dark-2
+      Use either <span class="code">.text-blue-light-2</span>, <span class="code">.text-blue-light-1</span>, <span class="code">.text-blue-neutral</span>, <span class="code">.text-blue-dark-1</span>, or <span class="code">.text-blue-dark-2</span>
     </p>
 
     <textarea class="full-width">
@@ -304,6 +306,12 @@
 
     <h1 class="section-head">Code</h1>
 
+    <div class="row space-evenly">
+      <span class="code">test</span>
+      <span class="code">TEST</span>
+    </div>
+
+    <p>Use the class <span class="code">.code</span> to encircle and embolden words or phrases.</p>
 
   </div>
 </body>
