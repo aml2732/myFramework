@@ -4,6 +4,9 @@
 .myFramework .full-width {
   width: 100%; }
 
+.myFramework .full-height {
+  height: 100%; }
+
 .myFramework .button {
   border-radius: 5px;
   border-width: 1px;
@@ -179,7 +182,8 @@
 
 .myFramework .column, .myFramework .columns {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  /*some auto-sets for basis*/ }
   .myFramework .column:not(.no-gap), .myFramework .columns:not(.no-gap) {
     margin-left: 10px;
     margin-right: 10px; }
@@ -195,3 +199,11 @@
     flex: 1 1 auto; }
   .myFramework .column > .row, .myFramework .columns > .row {
     padding: 10px; }
+  .myFramework .column.width-33, .myFramework .columns.width-33 {
+    flex-basis: 33%; }
+  .myFramework .column.width-66, .myFramework .columns.width-66 {
+    flex-basis: 66%; }
+  .myFramework .column.width-25, .myFramework .columns.width-25 {
+    flex-basis: 25%; }
+  .myFramework .column.width-50, .myFramework .columns.width-50 {
+    flex-basis: 50%; }

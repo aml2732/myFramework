@@ -72,6 +72,12 @@ $spaceing: 10px;
     &>.row{
       padding: $spaceing;
     }
+
+    /*some auto-sets for basis*/
+    &.width-33{flex-basis:33%;}
+    &.width-66{flex-basis:66%;}
+    &.width-25{flex-basis:25%};
+    &.width-50{flex-basis:50%};
   }
 
 }
